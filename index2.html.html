@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="pt-BR"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Em tudo dai graças</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;family=Merriweather:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
+  <meta name="description" content="Resumo bíblico e explicações sobre o plano de Deus para o sexo, perdão e restauração.">
+  <style>
+    :root{
+      --bg:#FBFFFA; /* off-white */
+      --card:#ffffff;
+      --muted:#6B6B6B;
+      --accent:#2D6A4F; /* deep green */
+      --accent-2:#54A24B; /* lighter green */
+      --warm:#FFB703; /* warm highlight */
+      --glass: rgba(255,255,255,0.6);
+      --radius:18px;
+      --maxw:1000px;
+      color-scheme: light;
+    }*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg, #F6FFF5 0%, #F3FFF9 100%);
+  color:#123;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+  padding:32px 16px;
+  display:flex;
+  justify-content:center;
+}
+
+.shell{width:100%;max-width:var(--maxw);}
+
+header{
+  display:flex;align-items:center;gap:16px;padding:18px 22px;border-radius:16px;margin-bottom:20px;background:linear-gradient(90deg, rgba(255,255,255,0.6), rgba(255,255,255,0.35));backdrop-filter: blur(6px);box-shadow:0 6px 18px rgba(20,20,20,0.06);
+}
+
+.logo{
+  width:64px;height:64px;border-radius:14px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-family:Merriweather,serif;font-size:28px;box-shadow:0 4px 14px rgba(45,106,79,0.24);
+}
+
+header h1{font-size:20px;margin:0}
+header p{margin:0;color:var(--muted);font-size:13px}
+
+main{display:grid;grid-template-columns:1fr;gap:18px}
+
+.hero{
+  display:flex;gap:20px;padding:24px;border-radius:var(--radius);align-items:center;background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.8));box-shadow:0 6px 20px rgba(15,40,20,0.04);
+}
+
+.hero .intro{flex:1}
+.hero h2{margin:0 0 6px 0;font-family:Merriweather,serif;font-size:20px}
+.hero p{margin:0;color:var(--muted)}
+
+.leaf{
+  width:120px;height:120px;border-radius:18px;background:linear-gradient(135deg,#E8F7EE,#D6F0E1);display:flex;align-items:center;justify-content:center;font-size:44px;color:var(--accent);box-shadow:inset 0 -8px 18px rgba(0,0,0,0.03);
+}
+
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+
+.card{background:var(--card);padding:18px;border-radius:14px;box-shadow:0 6px 18px rgba(16,30,12,0.04)}
+.card h3{margin-top:0;font-family:Merriweather,serif}
+.verse{font-style:italic;background:linear-gradient(90deg, rgba(245,250,245,1), rgba(255,255,255,0.7));padding:12px;border-radius:10px;margin:12px 0;border-left:4px solid var(--accent);}
+
+blockquote{margin:0;padding:0 12px;color:var(--muted);}
+
+.explain p{margin:8px 0}
+
+.accent-line{height:6px;background:linear-gradient(90deg,var(--accent),var(--accent-2));border-radius:6px;margin:6px 0 14px}
+
+.cta{display:flex;gap:8px;flex-wrap:wrap}
+.btn{padding:10px 14px;border-radius:12px;border:0;cursor:pointer;font-weight:600}
+.btn-primary{background:var(--accent);color:white}
+.btn-ghost{background:transparent;border:1px solid rgba(0,0,0,0.06)}
+
+.accordion{margin-top:8px}
+.acc-item{border-radius:12px;overflow:hidden;border:1px solid rgba(0,0,0,0.04);margin-bottom:10px}
+.acc-header{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;cursor:pointer;background:linear-gradient(90deg, rgba(255,255,255,0.6), rgba(255,255,255,0.3))}
+.acc-body{padding:12px 14px;background:linear-gradient(180deg, rgba(255,255,255,0.98), rgba(255,255,255,0.98));display:none}
+
+.summary-table{width:100%;border-collapse:collapse;margin-top:6px}
+.summary-table th,.summary-table td{padding:8px 10px;text-align:left;border-bottom:1px dashed rgba(0,0,0,0.04)}
+.summary-table th{font-weight:700;background:transparent}
+
+footer{margin-top:12px;padding:14px;border-radius:12px;text-align:center;color:var(--muted);font-size:14px}
+
+/* responsive */
+@media (max-width:880px){
+  .grid{grid-template-columns:1fr}
+  .hero{flex-direction:column;align-items:flex-start}
+  .leaf{width:92px;height:92px}
+}
+
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <div class="logo">🌿</div>
+      <div>
+        <h1>1 Tessalonicenses 5:18</h1>
+        <p>Breve guia sobre adorar e dar graças em todos momentos.</p>
+      </div>
+      <div style="margin-left:auto;display:flex;gap:8px;align-items:center">
+        <button class="btn btn-primary" onclick="document.getElementById('start').scrollIntoView({behavior:'smooth'})">Começar</button>
+        <button class="btn btn-ghost" id="toggleTheme">Alternar tema</button>
+      </div>
+    </header><main>
+  <section class="hero card" aria-labelledby="hero-title">
+    <div class="intro">
+      <h2 id="hero-title">Um olhar bíblico, compassivo e prático</h2>
+      <p>Entender que deveremos adorar a Deus em todos os momentos de nossas vidas, não só na bonança, mas aprender a dar graças a Deus até mesmo nos momentos ruins</p>
+      <div class="accent-line" aria-hidden="true"></div>
+      <div class="cta">
+        <button class="btn btn-primary" onclick="document.getElementById('section1').scrollIntoView({behavior:'smooth'})">Plano original</button>
+        <button class="btn" onclick="copySummary()">Copiar resumo</button>
+      </div>
+    </div>
+    <div class="leaf" aria-hidden="true">🌱</div>
+  </section>
+
+  <section id="start" class="grid">
+    <article id="section1" class="card">
+      <h3>🤲 Em tudo dai graças</h3>
+      <div class="verse">
+        <strong>1 Tessalonicenses 5:18</strong>
+        <blockquote>“Em tudo dai graças; porque esta é a vontade de Deus em Cristo Jesus para convosco. 
+”</blockquote>
+      </div>
+      <div class="explain">
+        <p><strong>Explicação:</strong> Devemos sempre nos relacionar com Deus de forma que nosso coração esteja grato, apesar das sutuações dificeis , fomos alcançados pela salvação eterna em cristo jesus, e isso supera qualquer dificuldade. </p>
+      </div>
+    </article>
+
+    <article id="section2" class="card">
+      <h3>🔥 A Murmuração retarda a promessa de Deus</h3>
+      <div class="verse">
+        <strong> Números 14:33</strong>
+        <blockquote> E vossos filhos pastorearão neste deserto quarenta anos, e levarão sobre si as vossas infidelidades, até que os vossos cadáveres se consumam neste deserto.</blockquote>
+      </div>
+      <div class="explain">
+        <p><strong>Explicação:</strong> Devemos ter cuidado com a murmuração ao longo de nossas vidas,mas ser grato em qualquer circunstancias de nossas vidas, o povo de israel devido a murmuração passou 40 anos no deserto, sendo assim podemos afirmar que a murmuração sim retarda, sufoca e impede a promessa de Deus em nossas vidas.</p>
+      </div>
+    </article>
+
+    <article id="section3" class="card">
+      <h3>🙏 Orai sem Cessar</h3>
+      <div class="verse">
+        <strong>1 Tessalonicenses 5:17</strong>
+        <blockquote>"Orai sem cessar."</blockquote>
+      </div>
+      <div class="explain">
+        <p><strong>Explicação:</strong>A oração continua nos ajuda a ser mais proximos de Deus, nos faz entender que muitas dificuldades são para nos fortalecer em Cristo Jesus. </p>
+      </div>
+    </article>
+
+    <article id="section4" class="card">
+      <h3>🌄  Alegrem se sempre</h3>
+      <div class="verse">
+        <strong>Felipenses 4:4</strong>
+        <blockquote>Alegrem-se sempre no Senhor. Repito: alegrem-se! </blockquote>
+      </div>
+      <div class="explain">
+        <p>Deus nos prometeu a maior riqueza que poderiamos ter, A VIDA ETERNA, devemos nos alegrar sempre, pois sabemos que Deus tem promessa na vida daqueles que amam a Deus</p>
+      </div>
+    </article>
+  </section>
+
+      <article id="section5" class="card">
+      <h3>🔥  Não Apagueis o Espirito</h3>
+      <div class="verse">
+        <strong>1 Tessalonicenses 5:19</strong>
+        <blockquote>Não extingais o Espírito. </blockquote>
+      </div>
+            <div class="verse">
+        <strong>Apocalipse 2:7</strong>
+        <blockquote>Quem tem ouvidos, ouça o que o Espírito diz às igrejas: Ao que vencer, dar-lhe-ei a comer da árvore da vida, que está no meio do paraíso de Deus. </blockquote>
+      </div>
+      <div class="explain">
+        <p>Devemos estar sempre atentos o que o espírito quer nos falar, e nunca negligenciar a voz do Espirito Santo de Deus, não deixar que o medo, a vergonha, e o pecado abafem a voz do Espirito Santo em nós, quando deixamos essas coisas nos vencerem estamos apagando a chama do Espirito Santo que acende em nossos corações</p>
+      </div>
+    </article>
+  </section>
+
+
+  
+      <article id="section6" class="card">
+      <h3> Considerações Finais</h3>
+      <div class="verse">
+        <strong>Felipenses 4:7</strong>
+        <blockquote>E a paz de Deus, que excede todo o entendimento, guardará os vossos corações e os vossos pensamentos em Cristo Jesus. </blockquote>
+      </div>
+      <div class="explain">
+        <p>Assim como grandes homens e mulheres usados(as) por Deus, passaremos por momentos de dificuldades, mas precisamos entender que a prisão não é maior que nosso Deus, e que devemos aprender a louvar e gratificar a Deus em todos os momentos, pois ele já nos garantiu a VIDA ETERNA</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="card" aria-labelledby="resumo">
+    <h3 id="resumo">✨ Resumo</h3>
+    <table class="summary-table" role="table">
+      <thead>
+        <tr><th>Tema</th><th>Verdade bíblica</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Em tudo dai graças</td><td>Devemos agradecer a Deus por em todos momentos de nossas vidas, sejam eles bons ou ruins.</td></tr>
+        <tr><td>A Murmuração retarda as promessas de Deus<td>Assim como o povo de israel, a murmuração pode retardar, sufocar as promessas de Deus em nossas vidas</td></tr>
+        <tr><td>Orai sem Cessar<td>A oração continua nos garante intimidade com Deus</td></tr>
+        <tr><td>Alegrar sempre</td><td>Devemos nos alegrar , pois temos a maior promessa, que vence todos os maus momentos, a VIDA ETERNA</td></tr>
+        <tr><td>Não Apagueis o Espirito</td><td>Não podemos deixar o medo, tristeza e pecado abafarem a voz do Espirito Santo de Deus.</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+ <section class="card">
+  <h3>Recursos práticos — 1 Tessalonicenses 5:18–24</h3>
+  <div class="accordion" id="faqs">
+
+    <div class="acc-item">
+      <div class="acc-header" data-target="a1">
+        Como agradecer a Deus em todas as situações?<span>▸</span>
+      </div>
+      <div class="acc-body" id="a1">
+        <p>
+          Reconheça que Deus continua no controle, mesmo em tempos difíceis. 
+          A gratidão abre espaço para que o Espírito Santo fortaleça seu coração 
+          e alinhe sua perspectiva com a vontade de Deus.
+        </p>
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <div class="acc-header" data-target="a2">
+        Como não apagar o Espírito?
+      </div>
+      <div class="acc-body" id="a2">
+        <p>
+          Mantenha seu coração sensível à voz do Espírito Santo através da oração, 
+          da obediência e da santidade.  
+          Não deixe que medo, pecado ou descuido espiritual abafem o que Ele quer falar.
+        </p>
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <div class="acc-header" data-target="a3">
+        Como tratar as profecias?
+      </div>
+      <div class="acc-body" id="a3">
+        <p>
+          Não despreze o que Deus pode comunicar através de profecias.  
+          Mas teste tudo pela Palavra e pelo caráter de Cristo, 
+          retendo somente aquilo que é bom e edificante.
+        </p>
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <div class="acc-header" data-target="a4">
+        Como discernir o que é bom e o que é mal?
+      </div>
+      <div class="acc-body" id="a4">
+        <p>
+          Examine tudo com sabedoria espiritual.  
+          O que glorifica a Deus, produza frutos no Espírito e esteja em acordo com a Bíblia, retenha.  
+          O que conduz ao pecado ou à confusão, rejeite imediatamente.
+        </p>
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <div class="acc-header" data-target="a5">
+        Como viver em santidade diariamente?
+      </div>
+      <div class="acc-body" id="a5">
+        <p>
+          Afaste-se de toda forma de mal e alinhe seu comportamento ao caráter de Cristo.  
+          Santidade é um processo diário, guiado pelo Espírito e sustentado pela fidelidade de Deus.
+        </p>
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <div class="acc-header" data-target="a6">
+        Deus realmente vai completar a obra em mim?
+      </div>
+      <div class="acc-body" id="a6">
+        <p>
+          Sim. Aquele que te chamou é fiel — Ele mesmo te santificará completamente, 
+          fortalecendo espírito, alma e corpo até o dia de Cristo (1 Ts 5:23–24).
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+      <button class="btn btn-primary" onclick="shareDemo()">Compartilhar</button>
+      <button class="btn" onclick="downloadFile()">Baixar HTML</button>
+    </div>
+  </section>
+
+  <footer>
+    <div>Feito com carinho — conteúdo bíblico e explicações pastorais para ensino e edificação.</div>
+    <small style="display:block;margin-top:8px;color:var(--muted)">Use este material com sensibilidade pastoral. Propriedade intelectual: conteúdo fornecido pelo usuário.</small>
+  </footer>
+</main>
+
+  </div>  <script>
+    // Accordion
+    document.querySelectorAll('.acc-header').forEach(h => {
+      h.addEventListener('click', () => {
+        const id = h.getAttribute('data-target');
+        const body = document.getElementById(id);
+        const open = body.style.display === 'block';
+        document.querySelectorAll('.acc-body').forEach(b => b.style.display = 'none');
+        if(!open) body.style.display = 'block';
+      });
+    });
+
+    // Copy summary to clipboard
+    function copySummary(){
+      const rows = Array.from(document.querySelectorAll('.summary-table tbody tr')).map(r => {
+        const cells = r.querySelectorAll('td');
+        return cells[0].innerText.trim() + ': ' + cells[1].innerText.trim();
+      }).join('\n');
+      navigator.clipboard.writeText('Resumo - Sexo e Aliança\n'+rows).then(()=>{
+        alert('Resumo copiado para a área de transferência!');
+      }).catch(()=>alert('Não foi possível copiar.'))
+    }
+
+    // Simple share demo (uses Web Share API if available)
+    function shareDemo(){
+      const text = 'Sexo e Aliança — resumo: ' + Array.from(document.querySelectorAll('.summary-table tbody tr')).map(r=>{const c=r.querySelectorAll('td');return c[0].innerText+': '+c[1].innerText}).join(' | ');
+      if(navigator.share){
+        navigator.share({title:'Sexo e Aliança',text}).catch(()=>{});
+      } else {
+        prompt('Copie este texto para compartilhar:', text);
+      }
+    }
+
+    // Download HTML of current page
+    function downloadFile(){
+      const doc = '<!doctype html>\n' + document.documentElement.outerHTML;
+      const blob = new Blob([doc], {type: 'text/html'});
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'sexo-e-alianca.html';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+    }
+
+    // Theme toggle (very simple dark toggle)
+    const toggle = document.getElementById('toggleTheme');
+    let dark = false;
+    toggle.addEventListener('click', ()=>{
+      dark = !dark;
+      if(dark){
+        document.documentElement.style.setProperty('--bg','#07140b');
+        document.documentElement.style.setProperty('--card','#0b1b17');
+        document.documentElement.style.setProperty('--muted','#cfe6d7');
+        document.documentElement.style.setProperty('--accent','#79c267');
+        document.documentElement.style.setProperty('--accent-2','#3aa94d');
+        document.body.style.background = 'linear-gradient(180deg,#05120a,#072113)';
+        toggle.innerText='Tema claro';
+        document.documentElement.style.colorScheme='dark';
+      } else {
+        document.documentElement.style.setProperty('--bg','#FBFFFA');
+        document.documentElement.style.setProperty('--card','#ffffff');
+        document.documentElement.style.setProperty('--muted','#6B6B6B');
+        document.documentElement.style.setProperty('--accent','#2D6A4F');
+        document.documentElement.style.setProperty('--accent-2','#54A24B');
+        document.body.style.background = 'linear-gradient(180deg,#F6FFF5,#F3FFF9)';
+        toggle.innerText='Alternar tema';
+        document.documentElement.style.colorScheme='light';
+      }
+    });
+
+    // Accessibility: enable keyboard open for accordions
+    document.addEventListener('keydown', (e)=>{
+      if(e.key==='Enter' && document.activeElement.classList.contains('acc-header')){
+        document.activeElement.click();
+      }
+    });
+  </script>
+
+</body></html>
