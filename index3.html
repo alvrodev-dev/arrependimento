@@ -311,16 +311,16 @@ footer{margin-top:12px;padding:14px;border-radius:12px;text-align:center;color:v
         const cells = r.querySelectorAll('td');
         return cells[0].innerText.trim() + ': ' + cells[1].innerText.trim();
       }).join('\n');
-      navigator.clipboard.writeText('Resumo - Sexo e Aliança\n'+rows).then(()=>{
+      navigator.clipboard.writeText('Resumo - Intimidade com Deus\n'+rows).then(()=>{
         alert('Resumo copiado para a área de transferência!');
       }).catch(()=>alert('Não foi possível copiar.'))
     }
 
     // Simple share demo (uses Web Share API if available)
     function shareDemo(){
-      const text = 'Sexo e Aliança — resumo: ' + Array.from(document.querySelectorAll('.summary-table tbody tr')).map(r=>{const c=r.querySelectorAll('td');return c[0].innerText+': '+c[1].innerText}).join(' | ');
+      const text = 'Intimidade com Deus — resumo: ' + Array.from(document.querySelectorAll('.summary-table tbody tr')).map(r=>{const c=r.querySelectorAll('td');return c[0].innerText+': '+c[1].innerText}).join(' | ');
       if(navigator.share){
-        navigator.share({title:'Sexo e Aliança',text}).catch(()=>{});
+        navigator.share({title:'Intimidade com Deus',text}).catch(()=>{});
       } else {
         prompt('Copie este texto para compartilhar:', text);
       }
@@ -332,7 +332,7 @@ footer{margin-top:12px;padding:14px;border-radius:12px;text-align:center;color:v
       const blob = new Blob([doc], {type: 'text/html'});
       const a = document.createElement('a');
       a.href = URL.createObjectURL(blob);
-      a.download = 'sexo-e-alianca.html';
+      a.download = 'index3..html';
       document.body.appendChild(a);
       a.click();
       a.remove();
