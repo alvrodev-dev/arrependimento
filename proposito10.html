@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="pt-BR"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Atos 1:8</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;family=Merriweather:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
+  <meta name="description" content="Ousadia e Poder do Espirito Santo">
+  <style>
+    :root{
+      --bg:#FBFFFA;
+      --card:#ffffff;
+      --muted:#6B6B6B;
+      --accent:#2D6A4F;
+      --accent-2:#54A24B;
+      --warm:#FFB703;
+      --glass: rgba(255,255,255,0.6);
+      --radius:18px;
+      --maxw:1000px;
+      color-scheme: light;
+    }*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg, #F6FFF5 0%, #F3FFF9 100%);
+  color:#123;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+  padding:32px 16px;
+  display:flex;
+  justify-content:center;
+}
+
+.shell{width:100%;max-width:var(--maxw);}
+
+header{
+  display:flex;align-items:center;gap:16px;padding:18px 22px;border-radius:16px;margin-bottom:20px;background:linear-gradient(90deg, rgba(255,255,255,0.6), rgba(255,255,255,0.35));backdrop-filter: blur(6px);box-shadow:0 6px 18px rgba(20,20,20,0.06);
+}
+
+.logo{
+  width:64px;height:64px;border-radius:14px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-family:Merriweather,serif;font-size:28px;box-shadow:0 4px 14px rgba(45,106,79,0.24);
+}
+
+header h1{font-size:20px;margin:0}
+header p{margin:0;color:var(--muted);font-size:13px}
+
+main{display:grid;grid-template-columns:1fr;gap:18px}
+
+.hero{
+  display:flex;gap:20px;padding:24px;border-radius:var(--radius);align-items:center;background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.8));box-shadow:0 6px 20px rgba(15,40,20,0.04);
+}
+
+.hero .intro{flex:1}
+.hero h2{margin:0 0 6px 0;font-family:Merriweather,serif;font-size:20px}
+.hero p{margin:0;color:var(--muted)}
+
+.leaf{
+  width:120px;height:120px;border-radius:18px;background:linear-gradient(135deg,#E8F7EE,#D6F0E1);display:flex;align-items:center;justify-content:center;font-size:44px;color:var(--accent);box-shadow:inset 0 -8px 18px rgba(0,0,0,0.03);
+}
+
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+
+.card{background:var(--card);padding:18px;border-radius:14px;box-shadow:0 6px 18px rgba(16,30,12,0.04)}
+.card h3{margin-top:0;font-family:Merriweather,serif}
+.verse{font-style:italic;background:linear-gradient(90deg, rgba(245,250,245,1), rgba(255,255,255,0.7));padding:12px;border-radius:10px;margin:12px 0;border-left:4px solid var(--accent);}
+
+blockquote{margin:0;padding:0 12px;color:var(--muted);}
+
+.explain p{margin:8px 0}
+
+.accent-line{height:6px;background:linear-gradient(90deg,var(--accent),var(--accent-2));border-radius:6px;margin:6px 0 14px}
+
+.cta{display:flex;gap:8px;flex-wrap:wrap}
+.btn{padding:10px 14px;border-radius:12px;border:0;cursor:pointer;font-weight:600}
+.btn-primary{background:var(--accent);color:white}
+.btn-ghost{background:transparent;border:1px solid rgba(0,0,0,0.06)}
+
+.accordion{margin-top:8px}
+.acc-item{border-radius:12px;overflow:hidden;border:1px solid rgba(0,0,0,0.04);margin-bottom:10px}
+.acc-header{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;cursor:pointer;background:linear-gradient(90deg, rgba(255,255,255,0.6), rgba(255,255,255,0.3))}
+.acc-body{padding:12px 14px;background:linear-gradient(180deg, rgba(255,255,255,0.98), rgba(255,255,255,0.98));display:none}
+
+.summary-table{width:100%;border-collapse:collapse;margin-top:6px}
+.summary-table th,.summary-table td{padding:8px 10px;text-align:left;border-bottom:1px dashed rgba(0,0,0,0.04)}
+.summary-table th{font-weight:700;background:transparent}
+
+footer{margin-top:12px;padding:14px;border-radius:12px;text-align:center;color:var(--muted);font-size:14px}
+
+@media (max-width:880px){
+  .grid{grid-template-columns:1fr}
+  .hero{flex-direction:column;align-items:flex-start}
+  .leaf{width:92px;height:92px}
+}
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <div class="logo">🌿</div>
+      <div>
+        <h1>Atos 1:8</h1>
+        <p>Mas receberão poder quando o Espírito Santo descer sobre vocês, e serão minhas testemunhas em Jerusalém, em toda a Judéia e Samaria, e até os confins da terra</p>
+      </div>
+      <div style="margin-left:auto;display:flex;gap:8px;align-items:center">
+        <button class="btn btn-primary" onclick="document.getElementById('start').scrollIntoView({behavior:'smooth'})">Começar</button>
+        <button class="btn btn-ghost" id="toggleTheme">Alternar tema</button>
+      </div>
+    </header>
+
+<main>
+
+<section class="hero card" aria-labelledby="hero-title">
+  <div class="intro">
+    <h2 id="hero-title">Um olhar bíblico, compassivo e prático</h2>
+    <p>Capacitação</p>
+    <div class="accent-line" aria-hidden="true"></div>
+    <div class="cta">
+      <button class="btn btn-primary" onclick="document.getElementById('section1').scrollIntoView({behavior:'smooth'})">
+        Plano original  
+      </button>
+      <button class="btn" onclick="copySummary()">Copiar resumo</button>
+    </div>
+  </div>
+  <div class="leaf" aria-hidden="true">🌱</div>
+</section>
+
+<section id="start" class="grid">
+  <article id="section1" class="card">
+    <h3>🤲 Receberão Poder</h3>
+    <div class="verse">
+      <strong>Atos 1:8</strong>
+      <blockquote>Mas receberão poder quando o Espírito Santo descer sobre vocês, e serão minhas testemunhas em Jerusalém, em toda a Judéia e Samaria, e até os confins da terra</blockquote>
+    </div>
+    <div class="explain">
+      <p>
+        <strong>Explicação:</strong>Recebemos a promessa de receber o espirito santo, para sermos testemnhas de Cristo, mas para isso precisamos ser exempos onde estivermos, seja no falar, ouvir, agir, Deus nos chama para uma vida posicionada com Ele.</p>
+    </div>
+  </article>
+
+  <article id="section2" class="card">
+    <h3>🔥 Não deixa a chama apagar</h3>
+    <div class="verse">
+      <strong>2 Timóteo 1:6</strong>
+      <blockquote>
+Por esta razão eu quero que se lembre disto: não deixe que se apague a chama do dom de Deus, o qual você recebeu pela imposição das minhas mãos.
+      </blockquote>
+    </div>
+    <div class="explain">
+      <p>
+        <strong>Explicação:</strong>Devemos manter um relacionamento constante com Deus com base no jejum, oração e consagração, pois Deus nos chamou para vivermos uma vida constante com ele, manter a chama aviva é sempre estar andando nos caminhos do Senhor, pois esse é o verdadeiro avivamento.</p>
+    </div>
+  </article>
+
+  <article id="section3" class="card">
+    <h3>🙏 Seja Ousado</h3>
+    <div class="verse">
+      <strong>2 Timóteo 1:7</strong>
+      <blockquote>
+Pois Deus não nos deu espírito de covardia, mas de poder, de amor e de equilíbrio.
+      </blockquote>
+    </div>
+    <div class="explain">
+      <p>
+        <strong>Explicação:</strong>Deus nos chama para viver uma vida de ousadia nele, uma vida de autoridade em Cristo Jesus, essa palavra nos traz a reflexão que não devemos nos acovardar perante o envangelho, mas sim sermos ousados em Cristo, espalhando a palavra, assim como Deus nos deu está missão.
+      </p>
+    </div>
+  </article>
+
+  <article id="section6" class="card">
+    <h3>📌 Considerações finais</h3>
+    <div class="explain">
+      <p>
+        <strong>Explicação:</strong>Você acha que está levando uma vida de ousadia com Deus? Deus nos deu a promessa do Espirito Santo, para isso devemos estar posicionados na presença Dele, estarmos dispostos a mudar conforme a palavra de Deus, andarmos na Luz.
+      </p>
+    </div>
+  </article>
+</section>
+
+
+<section class="card">
+  <h3>✨ Resumo</h3>
+
+  <table class="summary-table">
+    <tr>
+      <th>Tema</th>
+      <th>Verdade Bíblica</th>
+    </tr>
+
+    <tr>
+      <td>Poder do Espírito Santo</td>
+      <td>
+        O Espírito Santo é concedido por Deus para capacitar o cristão a viver e agir segundo a vontade de Cristo.
+      </td>
+    </tr>
+
+    <tr>
+      <td>Testemunho cristão</td>
+      <td>
+        O poder recebido tem como propósito principal sermos testemunhas fiéis de Jesus em todo lugar.
+      </td>
+    </tr>
+
+    <tr>
+      <td>Chama espiritual</td>
+      <td>
+        O dom de Deus precisa ser constantemente alimentado, não permitindo que a chama espiritual se apague.
+      </td>
+    </tr>
+
+    <tr>
+      <td>Ousadia em Cristo</td>
+      <td>
+        Deus não nos deu espírito de medo, mas de poder, amor e equilíbrio para anunciar o Evangelho com coragem.
+      </td>
+    </tr>
+
+    <tr>
+      <td>Vida posicionada</td>
+      <td>
+        A ação do Espírito Santo conduz o cristão a uma vida coerente, firme e comprometida com a missão de Deus.
+      </td>
+    </tr>
+  </table>
+
+  <div class="verse" style="margin-top:16px">
+    <blockquote>
+      Deus concede o Espírito Santo para capacitar Seus filhos a viverem com ousadia, manterem viva a chama espiritual
+      e serem testemunhas fiéis de Cristo, guiados pelo poder, amor e equilíbrio que vêm do Senhor.
+    </blockquote>
+  </div>
+</section>
+
+
+<section class="card">
+  <h3>🔥 Guia Prático</h3>
+
+  <div class="accordion">
+
+    <div class="acc-item">
+      <div class="acc-header" data-target="g1">
+        Como viver no poder do Espírito Santo? <span>▸</span>
+      </div>
+      <div class="acc-body" id="g1">
+        Mantendo comunhão constante com Deus por meio da oração, leitura da Palavra e sensibilidade à direção do Espírito Santo.
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <div class="acc-header" data-target="g2">
+        Como manter a chama espiritual acesa? <span>▸</span>
+      </div>
+      <div class="acc-body" id="g2">
+        Exercitando uma vida espiritual disciplinada, não negligenciando o dom recebido, mas perseverando na fé e na obediência.
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <div class="acc-header" data-target="g3">
+        Como desenvolver ousadia cristã? <span>▸</span>
+      </div>
+      <div class="acc-body" id="g3">
+        Confiando no poder de Deus, lembrando que Ele não nos deu espírito de medo, mas de poder, amor e equilíbrio.
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <div class="acc-header" data-target="g4">
+        Como cumprir a missão de ser testemunha? <span>▸</span>
+      </div>
+      <div class="acc-body" id="g4">
+        Vivendo de forma coerente com o Evangelho e anunciando Cristo com atitudes e palavras onde Deus nos colocar.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+    <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+      <button class="btn btn-primary" onclick="shareDemo()">Compartilhar</button>
+      <button class="btn" onclick="downloadFile()">Baixar HTML</button>
+    </div>
+  </section>
+
+  <footer>
+    <div>Feito com carinho — conteúdo bíblico e explicações pastorais para ensino e edificação.</div>
+    <small style="display:block;margin-top:8px;color:var(--muted)">Use este material com sensibilidade pastoral. Propriedade intelectual: conteúdo fornecido pelo usuário.</small>
+  </footer>
+</main>
+
+
+  </div>
+
+<script>
+  document.querySelectorAll('.acc-header').forEach(h => {
+    h.addEventListener('click', () => {
+      const id = h.getAttribute('data-target');
+      const body = document.getElementById(id);
+      const open = body.style.display === 'block';
+      document.querySelectorAll('.acc-body').forEach(b => b.style.display = 'none');
+      if(!open) body.style.display = 'block';
+    });
+  });
+
+  function copySummary(){
+    const rows = Array.from(document.querySelectorAll('.summary-table tbody tr')).map(r => {
+      const cells = r.querySelectorAll('td');
+      return cells[0].innerText.trim() + ': ' + cells[1].innerText.trim();
+    }).join('\n');
+    navigator.clipboard.writeText('Resumo - Sexo e Aliança\n'+rows).then(()=>{
+      alert('Resumo copiado para a área de transferência!');
+    }).catch(()=>alert('Não foi possível copiar.'))
+  }
+
+  function shareDemo(){
+    const text = 'Sexo e Aliança — resumo: ' + Array.from(document.querySelectorAll('.summary-table tbody tr')).map(r=>{const c=r.querySelectorAll('td');return c[0].innerText+': '+c[1].innerText}).join(' | ');
+    if(navigator.share){
+      navigator.share({title:'Sexo e Aliança',text}).catch(()=>{});
+    } else {
+      prompt('Copie este texto para compartilhar:', text);
+    }
+  }
+
+  function downloadFile(){
+    const doc = '<!doctype html>\\n' + document.documentElement.outerHTML;
+    const blob = new Blob([doc], {type: 'text/html'});
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'sexo-e-alianca.html';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  }
+
+  const toggle = document.getElementById('toggleTheme');
+  let dark = false;
+  toggle.addEventListener('click', ()=>{
+    dark = !dark;
+    if(dark){
+      document.documentElement.style.setProperty('--bg','#07140b');
+      document.documentElement.style.setProperty('--card','#0b1b17');
+      document.documentElement.style.setProperty('--muted','#cfe6d7');
+      document.documentElement.style.setProperty('--accent','#79c267');
+      document.documentElement.style.setProperty('--accent-2','#3aa94d');
+      document.body.style.background = 'linear-gradient(180deg,#05120a,#072113)';
+      toggle.innerText='Tema claro';
+      document.documentElement.style.colorScheme='dark';
+    } else {
+      document.documentElement.style.setProperty('--bg','#FBFFFA');
+      document.documentElement.style.setProperty('--card','#ffffff');
+      document.documentElement.style.setProperty('--muted','#6B6B6B');
+      document.documentElement.style.setProperty('--accent','#2D6A4F');
+      document.documentElement.style.setProperty('--accent-2','#54A24B');
+      document.body.style.background = 'linear-gradient(180deg,#F6FFF5,#F3FFF9)';
+      toggle.innerText='Alternar tema';
+      document.documentElement.style.colorScheme='light';
+    }
+  });
+
+  document.addEventListener('keydown', (e)=>{
+    if(e.key==='Enter' && document.activeElement.classList.contains('acc-header')){
+      document.activeElement.click();
+    }
+  });
+</script>
+
+</body>
+</html>
